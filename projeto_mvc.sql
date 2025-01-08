@@ -40,7 +40,7 @@ CREATE TABLE `depoimentos` (
 
 INSERT INTO `depoimentos` (`id`, `nome`, `mensagem`, `data`) VALUES
 (1, 'Alefe ', 'Lorem ipsum dolor sit ame', '2025-01-06 22:50:12'),
-(2, 'Canal Wdev', 'Lorem ipsum dolor sit ameLorem ipsum dolor sit ameLorem ipsum dolor sit ameLorem ipsum dolor sit ame. ANAL', '2025-01-06 23:11:54'),
+(2, 'Canal Wdev', 'Lorem ipsum dolor sit ameLorem ipsum dolor sit ameLorem ipsum dolor sit ameLorem ipsum dolor sit ame.', '2025-01-06 23:11:54'),
 (3, 'Anonimo', 'andar é otimo!', '2025-01-06 23:32:19'),
 (4, 'Bicicleta', 'Teste de depoimentos', '2025-01-06 23:32:40'),
 (5, 'mas98Sw_', 'biribinha', '2025-01-06 23:32:55'),
