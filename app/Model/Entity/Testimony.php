@@ -61,6 +61,41 @@ class Testimony
    */
   public static function getTestimonies($where = null, $order = null, $limit = null, $fields = '*')
   {
+    // Retorna os depoimentos
     return (new Database('depoimentos'))->select($where, $order, $limit, $fields);
+  }
+
+  /**
+   * Método responsável por retornar um depoimento com base em seu ID
+   * @param integer $id
+   * @return Testimony
+   */
+  public static function getTestimony($id)
+  {
+    // Retorna o depoimento
+    return self::getTestimonies('id = ' . $id)->fetchObject(self::class);
+  }
+
+  /**
+   * Método responsável por atualizar um depoimento no banco
+   * @return boolean
+   */
+  public function atualizar()
+  {
+    // Atualiza o depoimento no banco
+    return (new Database('depoimentos'))->update('id = ' . $this->id, [
+      'nome' => $this->nome,
+      'mensagem' => $this->mensagem
+    ]);
+  }
+
+  /**
+   * Método responsável por excluir um depoimento no banco
+   * @return boolean
+   */
+  public function excluir()
+  {
+    // Exclui o depoimento do banco
+    return (new Database('depoimentos'))->delete('id = ' . $this->id);
   }
 }

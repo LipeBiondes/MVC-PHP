@@ -12,7 +12,7 @@ class Alert
    * @param string $message
    * @return string
    */
-  public static function getSucces($message)
+  public static function getSuccess($message)
   {
     return View::render('admin/alert/status', [
       'tipo' => 'success',
