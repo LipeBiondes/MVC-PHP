@@ -70,7 +70,7 @@ class Testimony
    * @param integer $id
    * @return Testimony
    */
-  public static function getTestimony($id)
+  public static function getTestimonyById($id)
   {
     // Retorna o depoimento
     return self::getTestimonies('id = ' . $id)->fetchObject(self::class);

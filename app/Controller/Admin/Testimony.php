@@ -142,7 +142,7 @@ class Testimony extends Page
   public static function getEditTestimony($request, $id)
   {
     // Obtém o depoimento do banco de dados
-    $obTestimony = EntityTestimony::getTestimony($id);
+    $obTestimony = EntityTestimony::getTestimonyById($id);
 
     // Valida a instância
     if (!$obTestimony instanceof EntityTestimony) {
@@ -170,7 +170,7 @@ class Testimony extends Page
   public static function setEditTestimony($request, $id)
   {
     // Obtém o depoimento do banco de dados
-    $obTestimony = EntityTestimony::getTestimony($id);
+    $obTestimony = EntityTestimony::getTestimonyById($id);
 
     // Valida a instância
     if (!$obTestimony instanceof EntityTestimony) {
@@ -198,7 +198,7 @@ class Testimony extends Page
   public static function getDeleteTestimony($request, $id)
   {
     // Obtém o depoimento do banco de dados
-    $obTestimony = EntityTestimony::getTestimony($id);
+    $obTestimony = EntityTestimony::getTestimonyById($id);
 
     // Valida a instância
     if (!$obTestimony instanceof EntityTestimony) {
@@ -224,7 +224,7 @@ class Testimony extends Page
   public static function setDeleteTestimony($request, $id)
   {
     // Obtém o depoimento do banco de dados
-    $obTestimony = EntityTestimony::getTestimony($id);
+    $obTestimony = EntityTestimony::getTestimonyById($id);
 
     // Valida a instância
     if (!$obTestimony instanceof EntityTestimony) {
