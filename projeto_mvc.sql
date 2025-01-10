@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Tempo de geração: 09/01/2025 às 00:39
+-- Host: 127.0.0.1
+-- Tempo de geração: 10/01/2025 às 03:49
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -44,7 +44,9 @@ INSERT INTO `depoimentos` (`id`, `nome`, `mensagem`, `data`) VALUES
 (3, 'Anonimo', 'andar é otimo!', '2025-01-06 23:32:19'),
 (4, 'Bicicleta', 'Teste de depoimentos', '2025-01-06 23:32:40'),
 (5, 'mas98Sw_', 'biribinha', '2025-01-06 23:32:55'),
-(6, 'max ual', 'sou ual', '2025-01-06 23:35:09');
+(6, 'max ual', 'sou ual', '2025-01-06 23:35:09'),
+(7, 'Alefe Lipe', 'Novo Depoimento - Novo Depoimento - Novo Depoimento - Novo Depoimento - Novo Depoimento - Novo Depoimento - Novo Depoimento - Novo Depoimento - Novo Depoimento.', '2025-01-10 03:23:43'),
+(10, 'Lipe', 'massaroca', '2025-01-10 05:51:47');
 
 -- --------------------------------------------------------
 
@@ -58,6 +60,21 @@ CREATE TABLE `usuarios` (
   `email` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `usuarios`
+--
+
+--
+-- Inserindo um usuário padrão para testes. a senha é: asdf
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
+(1, 'teste', 'teste@gmail.com', '$2y$10$TbhEwyASj68kZFhhD0kgrORwJrleOc.BKgP52UvFWmkU0kpoMzaJ.');
+
+--
+-- Índices para tabelas despejadas
+--
 
 --
 -- Índices de tabela `depoimentos`
@@ -80,13 +97,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `depoimentos`
 --
 ALTER TABLE `depoimentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
